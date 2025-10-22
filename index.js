@@ -1,10 +1,10 @@
 import { tabletojson } from "tabletojson";
 
-const apiUrl = "https://hf.go.kr/ko/sub02/sub02_01_07_01.do";
+const API_URL = "https://hf.go.kr/ko/sub02/sub02_01_07_01.do";
 
 async function main() {
   let table = "";
-  await tabletojson.convertUrl(apiUrl, (tablesAsJson) => {
+  await tabletojson.convertUrl(API_URL, (tablesAsJson) => {
     console.log(
       "tablesAsJson => " + Object.prototype.toString.call(tablesAsJson),
     );
